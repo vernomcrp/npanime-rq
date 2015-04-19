@@ -1,6 +1,7 @@
 beautifulsoup4
 rq
 redis
-ipython
-requests
 
+# for easy to develop and monitor
+ipython
+rq-dashboard
