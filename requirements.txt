@@ -1,0 +1,6 @@
+beautifulsoup4
+rq
+redis
+ipython
+requests
+
