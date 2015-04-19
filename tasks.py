@@ -2,6 +2,11 @@
 
 import urllib2
 
+HEADERS={
+    'User-Agent': 'Mozilla/5.0'
+}
+
+
 def down(fname, url, folder_name):
     real_url = url[1]
     d = {

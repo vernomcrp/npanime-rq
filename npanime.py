@@ -4,7 +4,7 @@ import sys, os
 import urllib2
 from redis import Redis
 from rq import Queue
-from tasks import down
+from tasks import down, HEADERS
 
 
 try:
@@ -13,9 +13,6 @@ except ImportError as e:
     print 'You must have beautifulsoup pkg, install by pip install beautifulsoup4'.upper()
     sys.exit(1)
 
-HEADERS={
-    'User-Agent': 'Mozilla/5.0'
-}
 
 def get_good_html(file_like_object):
     # original html have 2 body tags, it's suck.
